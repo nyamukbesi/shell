@@ -6,6 +6,9 @@
 <p><a href="https://konveksipro.com/" rel="dofollow">okewla</a></p>  
 <p><a href="https://fastrepaircare.ae/" rel="dofollow">okewla</a></p>
 <p><a href="http://bizph.com/" rel="dofollow">okewla</a></p>
+<p><a href="https://bharatwire.com/">Slot777</a></p>
+<p><a href="http://sbt.ac.th/">For4d</a></p>
+<p><a href="https://maralinergroup.my/">Situs Toto</a></p>
 </div>
 
 <?php
