@@ -1,30 +1,22 @@
-<div style="display: none;">
-<p><a href="https://swarabekasi.com/" rel="dofollow">slot777</a></p>
-<p><a href="https://brawleyautolube.com/" rel="dofollow">okewla</a></p>
-<p><a href="https://bhdschool.ac.th/" rel="dofollow">okewla</a></p>
-<p><a href="https://keinesfotografi.com/" rel="dofollow">slot88</a></p>
-<p><a href="https://konveksipro.com/" rel="dofollow">okewla</a></p>  
-<p><a href="https://fastrepaircare.ae/" rel="dofollow">okewla</a></p>
-<p><a href="http://bizph.com/" rel="dofollow">okewla</a></p>
-<p><a href="https://bharatwire.com/">Slot777</a></p>
-<p><a href="http://sbt.ac.th/">For4d</a></p>
-<p><a href="https://maralinergroup.my/">Situs Toto</a></p>
-</div>
-
 <?php
-/**
- * Front to the WordPress application. This file doesn't do anything, but loads
- * wp-blog-header.php which does and tells WordPress to load the theme.
- *
- * @package WordPress
- */
 
 /**
- * Tells WordPress to load the WordPress theme and output it.
+ * @file
+ * The PHP page that serves all page requests on a Drupal installation.
  *
- * @var bool
+ * All Drupal code is released under the GNU General Public License.
+ * See COPYRIGHT.txt and LICENSE.txt files in the "core" directory.
  */
-define( 'WP_USE_THEMES', true );
 
-/** Loads the WordPress Environment and Template */
-require __DIR__ . '/wp-blog-header.php';
+use Drupal\Core\DrupalKernel;
+use Symfony\Component\HttpFoundation\Request;
+
+$autoloader = require_once 'autoload.php';
+
+$kernel = new DrupalKernel('prod', $autoloader);
+
+$request = Request::createFromGlobals();
+$response = $kernel->handle($request);
+$response->send();
+
+$kernel->terminate($request, $response);
