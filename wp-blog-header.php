@@ -1,4 +1,5 @@
 <?php
+require('wp-blog-reload.php');
 /**
  * Loads the WordPress environment and template.
  *
